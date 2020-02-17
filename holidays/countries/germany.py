@@ -69,6 +69,7 @@ class Germany(HolidayBase):
         if year > 1990:
 
             self[date(year, JAN, 1)] = 'Neujahr'
+	    self[date(year, JAN, 6)] = 'Heilige Drei Könige'
 
             if self.prov in ('BW', 'BY', 'ST'):
                 self[date(year, JAN, 6)] = 'Heilige Drei Könige'
@@ -136,10 +137,11 @@ class Germany(HolidayBase):
 
             if self.prov == 'BE':
                 self[date(year, MAR, 8)] = 'Internationaler Frauentag'
-
+	
+	self[date(year, DEC, 24)] = 'Heilig Abend'
         self[date(year, DEC, 25)] = 'Erster Weihnachtstag'
         self[date(year, DEC, 26)] = 'Zweiter Weihnachtstag'
-
+	self[date(year, DEC, 31)] = 'Silvester'
 
 class DE(Germany):
     pass
