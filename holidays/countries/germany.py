@@ -69,7 +69,6 @@ class Germany(HolidayBase):
         if year > 1990:
 
             self[date(year, JAN, 1)] = 'Neujahr'
-	    self[date(year, JAN, 6)] = 'Heilige Drei Könige'
 
             if self.prov in ('BW', 'BY', 'ST'):
                 self[date(year, JAN, 6)] = 'Heilige Drei Könige'
