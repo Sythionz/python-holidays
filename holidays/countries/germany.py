@@ -136,11 +136,12 @@ class Germany(HolidayBase):
 
             if self.prov == 'BE':
                 self[date(year, MAR, 8)] = 'Internationaler Frauentag'
-	
+
 	self[date(year, DEC, 24)] = 'Heilig Abend'
         self[date(year, DEC, 25)] = 'Erster Weihnachtstag'
         self[date(year, DEC, 26)] = 'Zweiter Weihnachtstag'
 	self[date(year, DEC, 31)] = 'Silvester'
+
 
 class DE(Germany):
     pass
@@ -148,3 +149,4 @@ class DE(Germany):
 
 class DEU(Germany):
     pass
+
